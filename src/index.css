@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ninja";
+  src: url("/fonts/ninja.ttf");
+}
+
+.font-ninja{
+  font-family: "ninja";
+}
+
+@font-face {
+  font-family: "sushi-one";
+  src: url("/fonts/Marker Felt.ttf");
+}
+
+.font-sushi-one{
+  font-family: "sushi-one";
+}
+@font-face {
+  font-family: "sushi-two";
+  src: url("/fonts/sushi-cat-two.ttf");
+}
+
+.font-sushi-two{
+  font-family: "sushi-two";
+}
+
+@font-face {
+  font-family: "groot-one";
+  src: url("/fonts/groot-one.ttf");
+}
+
+.font-groot-one{
+  font-family: "groot-one";
+}
+
+
+
+@layer base {
+  * {
+    @apply font-quantico;
+  }
+
+  html,
+  body {
+    @apply bg-[#2b1a50] text-white  ;
+  }
+
+  .container-wrapper {
+    @apply max-w-[1240px] w-[90%] mx-auto;
+  }
+  a{
+    @apply font-groot-one
+  }
+
+}
+
+
+.bg-main{
+  background-image: url(/images/backg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.big-info__inner {
+  background:  #3B062F;
+  background-size: cover, cover;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-center;
+  justify-content: space-between;
+}
+
+@media (max-width:768px) {
+  .big-info__inner {
+  flex-direction: column;
+  }  
+}
